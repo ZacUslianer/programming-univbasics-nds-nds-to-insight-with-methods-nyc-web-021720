@@ -5,10 +5,12 @@ require 'pry'
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
-  binding.pry
+  
+  total = 0 
   movie_index = 0 
-  while movie_index < [director_index][:movies].count do
-    total += nds[director_index][:movies][movie_index][:worldwide_gross]
+  while movie_index < director_data[:movies].count do
+    total += director_data[:movies][movie_index][:worldwide_gross]
+    binding.pry
     movie_index += 1 
 end
 end
