@@ -12,13 +12,6 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
-  result = {}
-  nil
-end
-
-
-
-def directors_totals(nds)
   pp nds
   director_index = 0
   result = {}
