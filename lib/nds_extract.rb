@@ -27,7 +27,7 @@ def directors_totals(nds)
     director_name = nds[director_index][:name]
     movie_index = 0 
     while movie_index < nds[director_index][:movies].count do 
-      total += gross_for_director(director_data)
+      total += nds[director_index][:movies][movie_index][:worldwide_gross]
       movie_index += 1 
     end 
     result[director_name] = total 
